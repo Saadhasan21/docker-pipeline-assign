@@ -1,6 +1,6 @@
 node{
     stage('test'){
-echo testing
+        sh 'node --version'   
     }
     stage('Build'){
         sh 'docker build -t saad3001/app:1.0.0 .'
