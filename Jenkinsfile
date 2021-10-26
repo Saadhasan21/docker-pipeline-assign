@@ -1,4 +1,7 @@
-node{
+pipeline{
+    agent any
+
+    stages{
     stage('test'){
         sh 'node --version'   
     }
@@ -12,6 +15,7 @@ node{
          sh 'docker push saad3001/app:1.0.0 .'
     }
     stage('Deploy'){
-
+echo 'deploy'
     }
+}
 }
