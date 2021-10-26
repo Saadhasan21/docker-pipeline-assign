@@ -23,7 +23,7 @@ pipeline
             {
                 echo "Building"
 
-                sh "docker build -t saad3001/app:1.0.0 ."
+                sh "docker build -t saad3001/app:lts ."
             }
         }
 
